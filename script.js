@@ -9,8 +9,9 @@ btn.addEventListener("click", addElement);
 function addElement(e){
 	// e.preventDefault();
 	let inputValue = inp.value;
-   let creatlist = document.createElement("li");
+   let creatlist =  document.createElement("li");
 	creatlist.innerText = inputValue;
-		ol.append = creatlist;
+		ol.append(creatlist);
+	inp.value = " ";
 	
 }

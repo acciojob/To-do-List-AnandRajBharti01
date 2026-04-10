@@ -1,17 +1,64 @@
+//your code here
+
 let inp = document.querySelector("#newTodoInput");
 let btn = document.querySelector("#addTodoBtn");
-let ol = document.querySelector("#todoList");
+let ol = document.querySelector("#todoList")
 
-btn.addEventListener("click", addElement);
+btn.addEventListener("click", addElement); 
 
-function addElement(e) {
-    let inputValue = inp.value;
-
-    if (inputValue.trim() === "") return;
-
-    let li = document.createElement("li");
-    li.innerText = inputValue;
-    ol.append(li);  // ✅ must have () here
-
-    inp.value = "";
+function addElement(){
+	// e.preventDefault();
+	let inputValue = inp.value;
+	
+   let creatlist =  document.createElement("li");
+	creatlist.innerText = inputValue;
+		ol.append(creatlist);
+	inp.value = "";
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

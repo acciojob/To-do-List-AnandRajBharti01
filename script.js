@@ -12,6 +12,6 @@ function addElement(e){
    let creatlist =  document.createElement("li");
 	creatlist.innerText = inputValue;
 		ol.append(creatlist);
-	inp.value = " ";
+	inp.value = "";
 	
 }

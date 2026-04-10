@@ -9,9 +9,9 @@ function addElement(e) {
 
     if (inputValue.trim() === "") return;
 
-    let creatlist = document.createElement("li");
-    creatlist.innerText = inputValue;
-    ol.append(creatlist);  // ✅ must have () here
+    let li = document.createElement("li");
+    li.innerText = inputValue;
+    ol.append(li);  // ✅ must have () here
 
     inp.value = "";
 }

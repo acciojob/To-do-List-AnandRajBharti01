@@ -9,6 +9,8 @@ btn.addEventListener("click", addElement);
 function addElement(){
 	// e.preventDefault();
 	let inputValue = inp.value;
+
+			if(inputValue == "")return;
 	
    let creatlist =  document.createElement("li");
 	creatlist.innerText = inputValue;
